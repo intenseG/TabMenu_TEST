@@ -1,12 +1,10 @@
-let tabNum = 0;
-
-let tabElms = document.getElementsByClassName('tab');
+const tabElms = document.getElementsByClassName('tab');
 
 for (let i = 0; i < tabElms.length; i++) {
     tabElms[i].addEventListener('click', switchMenu);
 }
 
-let contentElms = document.getElementsByClassName('content');
+const contentElms = document.getElementsByClassName('content');
 
 function switchMenu() {
     document.getElementsByClassName('active')[0].classList.remove('active');
