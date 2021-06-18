@@ -1,16 +1,16 @@
-const tabElms = document.getElementsByClassName('tab');
+const tabElms = document.querySelectorAll('.tab');
 
 for (let i = 0; i < tabElms.length; i++) {
     tabElms[i].addEventListener('click', switchMenu);
 }
 
-const contentElms = document.getElementsByClassName('content');
+const contentElms = document.querySelectorAll('.content');
 
 function switchMenu() {
-    document.getElementsByClassName('active')[0].classList.remove('active');
+    document.querySelector('.active').classList.remove('active');
     this.classList.add('active');
 
-    document.getElementsByClassName('show')[0].classList.remove('show');
+    document.querySelector('.show').classList.remove('show');
 
     const tabArray = Array.from(tabElms);
     const index = tabArray.indexOf(this);
