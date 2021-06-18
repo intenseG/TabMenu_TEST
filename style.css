@@ -1,0 +1,40 @@
+.container {
+    width: 450px;
+    height: 350px;
+}
+
+.container .tab-group {
+    margin-top: 10px;
+}
+
+.container .tab-group .tab {
+    width: 70px;
+    height: 35px;
+    background: #5f6363;
+    border:solid 1px rgb(0, 0, 0);
+    border-bottom: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container .tab-group .tab.active {
+    background: #ffffff;
+    color: #000000;
+}
+
+.container .content-group {
+    margin-top: 20px;
+}
+
+.container .content-group .content {
+    display: none;
+    width: 450px;
+    height: 300px;
+    font-size: 20px;
+}
+
+.container .content-group .content.show {
+    display: block;
+}
